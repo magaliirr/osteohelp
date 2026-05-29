@@ -76,61 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── 5. Слайдер отзывов ────────────────────────
-    const track    = document.getElementById('reviewsTrack');
-    const prevBtn  = document.getElementById('prevReview');
-    const nextBtn  = document.getElementById('nextReview');
-    const dotsWrap = document.getElementById('sliderDots');
-
-    if (track && prevBtn && nextBtn) {
-        const cards   = track.querySelectorAll('.review-card');
-        let current   = 0;
-        let perView   = getPerView();
-
-        function getPerView() {
-            if (window.innerWidth < 600)  return 1;
-            if (window.innerWidth < 1024) return 2;
-            return 3;
-        }
-
-        // Создать точки
-        const totalDots = Math.ceil(cards.length / perView);
-        for (let i = 0; i < totalDots; i++) {
-            const dot = document.createElement('button');
-            dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
-            dot.setAttribute('aria-label', `Отзыв ${i + 1}`);
-            dot.setAttribute('role', 'tab');
-            dot.addEventListener('click', () => goTo(i));
-            dotsWrap.appendChild(dot);
-        }
-
-        function goTo(index) {
-            current = Math.max(0, Math.min(index, totalDots - 1));
-            const cardWidth   = cards[0].offsetWidth + 24; // gap 24px
-            track.style.transform = `translateX(-${current * cardWidth * perView}px)`;
-            dotsWrap.querySelectorAll('.slider-dot').forEach((d, i) => {
-                d.classList.toggle('active', i === current);
-            });
-        }
-
-        prevBtn.addEventListener('click', () => goTo(current - 1));
-        nextBtn.addEventListener('click', () => goTo(current + 1));
-
-        // Свайп на мобильном
-        let startX = 0;
-        track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-        track.addEventListener('touchend',   e => {
-            const diff = startX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
-        });
-
-        window.addEventListener('resize', () => {
-            perView = getPerView();
-            goTo(0);
-        }, { passive: true });
-    }
-
-    // ── 6. Форма записи ───────────────────────────
+    // ── 5. Форма записи ───────────────────────────
     const form    = document.getElementById('bookingForm');
     const success = document.getElementById('formSuccess');
 
@@ -159,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const CHAT_ID   = 'ВСТАВИТЬ_CHAT_ID';
 
             const data = new FormData(form);
-            const msg  = `📬 Новая заявка с сайта OsteoHelp\n\n👤 Имя: ${data.get('name')}\n📱 Телефон: ${data.get('phone')}\n💬 Сообщение: ${data.get('message') || '—'}`;
+            const msg  = `📬 Новая заявка с сайта ОстеоХелп\n\n👤 Имя: ${data.get('name')}\n📱 Телефон: ${data.get('phone')}\n💬 Сообщение: ${data.get('message') || '—'}`;
 
             try {
                 if (BOT_TOKEN !== 'ВСТАВИТЬ_BOT_TOKEN') {
@@ -194,6 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: 'сертификаты/10.JPG', title: 'Золотой сертификат доктора остеопрактики — 2020' },
         { src: 'сертификаты/11.JPG', title: 'Эстетическое остеопрактическое скульптурирование — 2019' },
         { src: 'сертификаты/12.JPG', title: 'Неврология движения. Нейроцентрическая модель — 16 часов' },
+        { src: 'сертификаты/13.jpg', title: 'Диплом врача — КубГМУ, специальность «Лечебное дело» · 2011' },
+        { src: 'сертификаты/14.jpg', title: 'Остеопатический подход к работе на головном мозге. Энцефалические фиксации — 24 часа · МАОО 2024' },
     ];
 
     const lightboxEl  = document.getElementById('certLightbox');
@@ -313,9 +261,42 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'ArrowRight')  navCert(1);
         }
         if (galleryEl.classList.contains('open') && e.key === 'Escape') closeGallery();
+        if (reviewLb.classList.contains('open') && e.key === 'Escape') closeReviewLb();
     });
 
-    // ── 9. Smooth scroll для старых браузеров ─────
+    // ── 9. Лайтбокс скринов отзывов ──────────────
+    const reviewLb        = document.getElementById('reviewImgLightbox');
+    const reviewLbImg     = document.getElementById('reviewLbImg');
+    const reviewLbClose   = document.getElementById('reviewLbClose');
+    const reviewLbOverlay = document.getElementById('reviewLbOverlay');
+
+    function openReviewLb(src, alt) {
+        reviewLbImg.src = src;
+        reviewLbImg.alt = alt;
+        reviewLb.classList.add('open');
+        reviewLb.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        reviewLbClose.focus();
+    }
+    function closeReviewLb() {
+        reviewLb.classList.remove('open');
+        reviewLb.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.review-combo__proof img').forEach(img => {
+        img.addEventListener('click', () => openReviewLb(img.src, img.alt));
+        img.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openReviewLb(img.src, img.alt); }
+        });
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+    });
+
+    reviewLbClose.addEventListener('click', closeReviewLb);
+    reviewLbOverlay.addEventListener('click', closeReviewLb);
+
+    // ── 10. Smooth scroll для старых браузеров ─────
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', (e) => {
             const id = link.getAttribute('href').slice(1);

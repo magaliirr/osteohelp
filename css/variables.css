@@ -1,12 +1,12 @@
 :root {
     /* ── Цвета ── */
-    --cream:        #F7F3EE;
-    --sand:         #EDE5D8;
-    --sage:         #7D8F6A;
-    --sage-dark:    #5A6B50;
-    --sage-light:   #B8CAAB;
-    --peach:        #EDAA80;
-    --lemon:        #EEE27A;
+    --cream:        #FCF8F2;
+    --sand:         #F2E8D8;
+    --sage:         #B87958;
+    --sage-dark:    #7A4E35;
+    --sage-light:   #DEC0A0;
+    --peach:        #E8956A;
+    --lemon:        #FAF0E0;
     --text:         #2A2420;
     --text-soft:    #7A6E68;
     --white:        #FFFFFF;
