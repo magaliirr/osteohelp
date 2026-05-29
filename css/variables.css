@@ -1,0 +1,44 @@
+:root {
+    /* ── Цвета ── */
+    --cream:        #F7F3EE;
+    --sand:         #EDE5D8;
+    --sage:         #7D8F6A;
+    --sage-dark:    #5A6B50;
+    --sage-light:   #B8CAAB;
+    --peach:        #EDAA80;
+    --lemon:        #EEE27A;
+    --text:         #2A2420;
+    --text-soft:    #7A6E68;
+    --white:        #FFFFFF;
+
+    /* ── Шрифты ── */
+    --serif:  'DM Serif Display', Georgia, serif;
+    --sans:   'DM Sans', system-ui, sans-serif;
+
+    /* ── Отступы ── */
+    --space-xs:   8px;
+    --space-sm:   16px;
+    --space-md:   32px;
+    --space-lg:   64px;
+    --space-xl:   96px;
+    --space-xxl:  128px;
+
+    /* ── Радиусы ── */
+    --r-sm:   8px;
+    --r-md:   16px;
+    --r-lg:   24px;
+    --r-full: 9999px;
+
+    /* ── Тени ── */
+    --shadow-sm: 0 2px 8px rgba(42,36,32,.06);
+    --shadow-md: 0 4px 24px rgba(42,36,32,.08);
+    --shadow-lg: 0 8px 40px rgba(42,36,32,.12);
+
+    /* ── Контейнер ── */
+    --container:        1200px;
+    --container-narrow: 760px;
+
+    /* ── Переходы ── */
+    --ease: .3s ease;
+    --ease-slow: .7s ease;
+}
