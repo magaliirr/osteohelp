@@ -1397,6 +1397,10 @@ em { font-style: italic; }
     display: flex;
     flex-direction: column;
     gap: 12px;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .tariff-card--featured {
     background: var(--white);
@@ -1650,4 +1654,6 @@ em { font-style: italic; }
     .booking-form { padding: var(--space-md); }
     .price-card__right { padding: var(--space-md); }
     .price-card__left  { padding: var(--space-md); }
+    .tariff-card { padding: var(--space-md); }
+    .tariff-card .btn { width: 100%; }
 }
