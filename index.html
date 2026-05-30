@@ -36,7 +36,7 @@
             <a href="#author" class="header__link">Об авторе</a>
             <a href="#reviews" class="header__link">Отзывы</a>
             <a href="#price" class="header__link">Цена</a>
-            <a href="#booking" class="btn btn--sm">Записаться</a>
+            <a href="#price" class="btn btn--sm">Купить курс</a>
         </nav>
         <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
             <span class="burger__line"></span>
@@ -49,7 +49,7 @@
         <a href="#author" class="mobile-menu__link">Об авторе</a>
         <a href="#reviews" class="mobile-menu__link">Отзывы</a>
         <a href="#price" class="mobile-menu__link">Цена</a>
-        <a href="#booking" class="btn btn--primary btn--lg" style="align-self:stretch;text-align:center">Записаться на курс</a>
+        <a href="#price" class="btn btn--primary btn--lg" style="align-self:stretch;text-align:center">Купить курс</a>
     </div>
 </header>
 
@@ -643,15 +643,6 @@
         <div class="accordion fade-up" id="accordion">
             <div class="accordion__item">
                 <button class="accordion__btn" aria-expanded="false">
-                    <span>Это дорого — я не могу себе позволить</span>
-                    <span class="accordion__icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion__body" hidden>
-                    <p>Один визит к остеопату стоит [ЦЕНА ВИЗИТА] рублей — и даёт облегчение на несколько недель. Курс стоит [ЦЕНА КУРСА] рублей и даёт инструменты <strong>на всю жизнь</strong>. Вы сможете помогать всей семье в любое время — без записи, без ожидания, без новых трат.</p>
-                </div>
-            </div>
-            <div class="accordion__item">
-                <button class="accordion__btn" aria-expanded="false">
                     <span>Боюсь, что не смогу — это слишком сложно</span>
                     <span class="accordion__icon" aria-hidden="true"></span>
                 </button>
@@ -674,7 +665,7 @@
                     <span class="accordion__icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion__body" hidden>
-                    <p>Курс полностью асинхронный — смотрите когда удобно, в своём темпе. Доступ сохраняется [СРОК]. Каждый урок занимает [ДЛИТЕЛЬНОСТЬ] минут. Можно смотреть в обед, в дороге или перед сном.</p>
+                    <p>Курс полностью асинхронный — смотрите когда удобно, в своём темпе. Можно смотреть в обед, в дороге или перед сном.</p>
                 </div>
             </div>
             <div class="accordion__item">
@@ -690,37 +681,6 @@
     </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     12. ФОРМА ЗАПИСИ
-════════════════════════════════════════ -->
-<section class="section" id="booking">
-    <div class="container container--narrow">
-        <div class="section__header fade-up">
-            <div class="tag">Запись</div>
-            <h2>Запишитесь на консультацию</h2>
-            <p class="section__subtitle">Каждая семья — своя история. Если хотите поговорить перед покупкой или просто понять, подойдёт ли вам курс — оставьте заявку. Отвечу лично.</p>
-        </div>
-        <form class="booking-form fade-up" id="bookingForm" novalidate>
-            <div class="form-group">
-                <label for="fname">Ваше имя</label>
-                <input type="text" id="fname" name="name" placeholder="Как к вам обращаться?" required autocomplete="given-name">
-            </div>
-            <div class="form-group">
-                <label for="fphone">Телефон или Telegram</label>
-                <input type="tel" id="fphone" name="phone" placeholder="+7 (___) ___ __ __" required>
-            </div>
-            <div class="form-group">
-                <label for="fmessage">Расскажите о вашей ситуации <span class="form-optional">(необязательно)</span></label>
-                <textarea id="fmessage" name="message" rows="4" placeholder="Что беспокоит вас или ваших близких?"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--xl btn--full">Отправить заявку</button>
-            <p class="form__privacy">Нажимая кнопку, вы соглашаетесь с <a href="docs/privacy.pdf" target="_blank" rel="noopener">политикой конфиденциальности</a></p>
-            <div class="form__success" id="formSuccess" aria-live="polite" hidden>
-                <strong>Заявка отправлена!</strong> Ирина свяжется с вами в течение дня.
-            </div>
-        </form>
-    </div>
-</section>
 
 <!-- ════════════════════════════════════════
      12. ФИНАЛЬНЫЙ CTA
@@ -742,7 +702,7 @@
             <p class="section__subtitle">Сотни участниц уже снимают головную боль без таблеток, укладывают детей без слёз и видят благодарность в глазах близких. Теперь ваша очередь.</p>
             <div class="final-cta__btns">
                 <a href="#tariffs" class="btn btn--primary btn--xl">Купить курс</a>
-                <a href="#booking" class="btn btn--ghost btn--lg">Задать вопрос</a>
+                <a href="https://t.me/irina_Alunkacheva" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">Задать вопрос</a>
             </div>
             <p class="final-cta__tg">
                 Остались вопросы? <a href="https://t.me/irina_Alunkacheva" target="_blank" rel="noopener noreferrer">Напишите в Telegram</a>
