@@ -481,6 +481,7 @@ em { font-style: italic; }
 }
 
 #author { overflow: hidden; }
+#price  { overflow: hidden; }
 
 /* ════════════════════════════════════════
    6. ОБ АВТОРЕ
@@ -1655,5 +1656,10 @@ em { font-style: italic; }
     .price-card__right { padding: var(--space-md); }
     .price-card__left  { padding: var(--space-md); }
     .tariff-card { padding: var(--space-md); }
-    .tariff-card .btn { width: 100%; }
+    .tariff-card .btn {
+        width: 100%;
+        white-space: normal;
+        padding-inline: var(--space-sm);
+        text-align: center;
+    }
 }
