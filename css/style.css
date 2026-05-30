@@ -1,6 +1,10 @@
 /* ════════════════════════════════════════
    БАЗА
 ════════════════════════════════════════ */
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--sans);
     font-size: 17px;
@@ -136,8 +140,8 @@ em { font-style: italic; }
     pointer-events: none;
     z-index: 0;
 }
-.botanical--hero  { top: 60px; left: -20px; opacity: .5; }
-.botanical--author { top: 40px; right: -10px; opacity: .4; }
+.botanical--hero  { top: 60px; left: 0; opacity: .5; }
+.botanical--author { top: 40px; right: 0; opacity: .4; }
 .botanical--final { bottom: 40px; left: 20px; opacity: .35; }
 
 /* ── Плейсхолдеры фото ── */
@@ -475,6 +479,8 @@ em { font-style: italic; }
     font-style: italic;
     color: var(--text-soft);
 }
+
+#author { overflow: hidden; }
 
 /* ════════════════════════════════════════
    6. ОБ АВТОРЕ
