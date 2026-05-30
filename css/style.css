@@ -1662,4 +1662,7 @@ em { font-style: italic; }
         padding-inline: var(--space-sm);
         text-align: center;
     }
+    .lightbox__stage { gap: 8px; }
+    .lightbox__nav-btn { width: 36px; height: 36px; }
+    .lightbox__img { max-width: calc(100vw - 88px); }
 }
