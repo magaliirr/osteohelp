@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ОстеоХелп — онлайн-курс мягких остеопатических техник для здоровья семьи. Врач-остеопат Ирина Алункачева.">
+    <title>ОстеоХелп — Мягкие техники для здоровья семьи | Ирина Алункачева</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ОстеоХелп — Мягкие техники для здоровья семьи">
+    <meta property="og:description" content="Онлайн-курс мягких остеопатических техник. Помогайте близким здесь и сейчас — без медобразования и без лекарств. Врач-остеопат Ирина Алункачева.">
+    <meta property="og:image" content="img/фото/irina-portrait.jpeg">
+    <meta property="og:locale" content="ru_RU">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════
+     ШАПКА
+════════════════════════════════════════ -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#home" class="header__logo">
+            <img src="img/logo.svg" alt="ОстеоХелп" class="header__logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="header__logo-text" style="display:none">ОстеоХелп</span>
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Основная навигация">
+            <a href="#program" class="header__link">Программа</a>
+            <a href="#author" class="header__link">Об авторе</a>
+            <a href="#reviews" class="header__link">Отзывы</a>
+            <a href="#price" class="header__link">Цена</a>
+            <a href="#price" class="btn btn--sm">Купить курс</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#program" class="mobile-menu__link">Программа</a>
+        <a href="#author" class="mobile-menu__link">Об авторе</a>
+        <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+        <a href="#price" class="mobile-menu__link">Цена</a>
+        <a href="#price" class="btn btn--primary btn--lg" style="align-self:stretch;text-align:center">Купить курс</a>
+    </div>
+</header>
+
+<main>
+
+<!-- ════════════════════════════════════════
+     1. HERO
+════════════════════════════════════════ -->
+<section class="hero" id="home">
+    <div class="botanical botanical--hero" aria-hidden="true">
+        <svg width="120" height="220" viewBox="0 0 120 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 215 C58 198 55 175 52 142 C49 109 50 65 60 12" stroke="#7D8F6A" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M56 52 C56 52 28 40 16 16 C35 30 54 46 54 46" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M62 52 C62 52 88 40 100 16 C81 30 64 46 64 46" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M54 85 C54 85 24 76 12 52 C33 66 52 78 52 78" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M63 85 C63 85 91 76 103 52 C82 66 65 78 65 78" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M53 118 C53 118 25 111 14 88 C34 101 51 112 51 112" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M62 118 C62 118 89 111 100 88 C80 101 64 112 64 112" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M52 152 C52 152 27 146 17 124 C37 136 50 147 50 147" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M61 152 C61 152 85 146 95 124 C76 136 63 147 63 147" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M52 186 C52 186 30 182 21 161 C40 173 50 182 50 182" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+            <path d="M60 186 C60 186 82 182 91 161 C72 173 62 182 62 182" stroke="#7D8F6A" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <div class="tag">Онлайн-курс для всей семьи</div>
+                <h1 class="hero__title">
+                    Ваши руки —<br>
+                    главная аптечка <em>вашей семьи</em>
+                </h1>
+                <p class="hero__subtitle">
+                    Освойте мягкие остеопатические техники под руководством врача и станьте для своих близких тихой гаванью здоровья, куда всегда можно прийти за помощью.
+                </p>
+                <div class="hero__cta">
+                    <a href="#price" class="btn btn--primary btn--lg">Выбрать свой формат заботы</a>
+                    <a href="#program" class="btn btn--ghost btn--lg">Узнать подробнее</a>
+                </div>
+                <div class="hero__bullets">
+                    <div class="hero__bullet">
+                        <div class="hero__bullet-icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 15.5C9 15.5 2 11.5 2 6.5a4 4 0 0 1 7-2.65A4 4 0 0 1 16 6.5c0 5-7 9-7 9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <strong>Уверенность в любой ситуации</strong>
+                            Помогайте детям, мужу и родителям здесь и сейчас.
+                        </div>
+                    </div>
+                    <div class="hero__bullet">
+                        <div class="hero__bullet-icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2L3 4.5v5c0 3.9 2.6 7.2 6 7.9 3.4-.7 6-4 6-7.9v-5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div>
+                            <strong>Надёжная защита</strong>
+                            Укрепляйте иммунитет и решайте проблемы до того, как они станут серьёзными.
+                        </div>
+                    </div>
+                    <div class="hero__bullet">
+                        <div class="hero__bullet-icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <div>
+                            <strong>Всего 15 минут в день</strong>
+                            Верните семье здоровье без лекарств и бесконечных походов по врачам.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__blob" aria-hidden="true"></div>
+                <div class="hero__photo">
+                    <img src="img/фото/irina-baby.jpeg" alt="Ирина Алункачева работает с ребёнком" class="hero__photo-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     2. БОЛЬ
+════════════════════════════════════════ -->
+<section class="section section--sand" id="pain">
+    <div class="container">
+        <div class="section__header fade-up">
+            <div class="tag">Узнаёте себя?</div>
+            <h2>Знакомый сценарий, который крадёт вашу энергию?</h2>
+        </div>
+        <div class="pain__grid fade-up">
+            <div class="pain__card">
+                <div class="pain__icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14" stroke="#EDAA80" stroke-width="1.5"/><path d="M16 9v7l4 4" stroke="#EDAA80" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <p class="pain__card-title">День сурка с болезнями</p>
+                <p>Только вылечили кашель у ребёнка — начался отит. Снова бессонные ночи, тревога и усталый взгляд мужа. Ваша домашняя аптечка больше напоминает склад фармацевтической компании.</p>
+            </div>
+            <div class="pain__card">
+                <div class="pain__icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="#EDAA80" stroke-width="1.5"/><path d="M12 16s1.5 3 4 3 4-3 4-3" stroke="#EDAA80" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="13" r="1" fill="#EDAA80"/><circle cx="20" cy="13" r="1" fill="#EDAA80"/></svg>
+                </div>
+                <p class="pain__card-title">Батарейка на нуле</p>
+                <p>Вы просыпаетесь уже уставшей. Головная боль, ноющая спина, туман в голове. Сил хватает только на рутину — а на себя, на радость, на близость с мужем не остаётся ничего.</p>
+            </div>
+            <div class="pain__card">
+                <div class="pain__icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 28C16 28 6 22 6 14a10 10 0 0120 0c0 8-10 14-10 14z" stroke="#EDAA80" stroke-width="1.5"/></svg>
+                </div>
+                <p class="pain__card-title">Стена непонимания</p>
+                <p>Врачи говорят "это возрастное" или выписывают очередной рецепт. Но вы видите, что вашему близкому нехорошо. Чувство бессилия и страх от того, что не знаете, как помочь — ваше второе имя.</p>
+            </div>
+        </div>
+        <p class="pain__ending fade-up">Хватит быть заложницей обстоятельств. Пора вернуть себе контроль.</p>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     3. ТРАНСФОРМАЦИЯ (лимонный фон — якорь внимания)
+════════════════════════════════════════ -->
+<section class="section section--lemon" id="transformation">
+    <div class="container">
+        <div class="transform__inner">
+            <div class="section__header section__header--left fade-up">
+                <div class="tag tag--dark">После курса</div>
+                <h2>Представьте... что вы — женщина, в руках которой есть сила</h2>
+            </div>
+            <ul class="transform-list fade-up">
+                <li class="transform-list__item">
+                    <span class="transform-list__mark" aria-hidden="true">✦</span>
+                    <span>Ваш ребёнок спокойно спит всю ночь, потому что вы сами сняли напряжение, которое его беспокоило.</span>
+                </li>
+                <li class="transform-list__item">
+                    <span class="transform-list__mark" aria-hidden="true">✦</span>
+                    <span>Ваш муж после тяжёлого дня просит не таблетку от головы, а ваши руки — и смотрит на вас с восхищением и благодарностью.</span>
+                </li>
+                <li class="transform-list__item">
+                    <span class="transform-list__mark" aria-hidden="true">✦</span>
+                    <span>Вы смотрите в зеркало и видите не уставшую маму, а красивую женщину с ровной осанкой и сияющим лицом.</span>
+                </li>
+                <li class="transform-list__item">
+                    <span class="transform-list__mark" aria-hidden="true">✦</span>
+                    <span>Вы — авторитет. Та, к кому обращаются за советом и помощью. Ваша ценность в семье выросла до небес.</span>
+                </li>
+            </ul>
+            <div class="fade-up" style="margin-top:var(--space-md)">
+                <a href="#price" class="btn btn--primary btn--lg">Хочу так уметь</a>
+            </div>
+            <div class="transform__key fade-up">
+                Курс «ОстеоХелп» — это не про массаж. Это про передачу вам ключей от здоровья вашей семьи.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     4. ОБ АВТОРЕ
+════════════════════════════════════════ -->
+<section class="section section--sand" id="author">
+    <div class="botanical botanical--author" aria-hidden="true">
+        <svg width="100" height="180" viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 175 C48 160 45 138 42 108 C39 78 40 42 50 8" stroke="#7D8F6A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <path d="M46 40 C46 40 20 30 10 10 C28 22 44 36 44 36" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M52 40 C52 40 76 30 86 10 C68 22 54 36 54 36" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M44 72 C44 72 18 64 8 42 C28 54 42 66 42 66" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M53 72 C53 72 77 64 87 42 C67 54 55 66 55 66" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M43 106 C43 106 18 100 9 79 C29 91 41 101 41 101" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M52 106 C52 106 76 100 85 79 C65 91 54 101 54 101" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="author__inner fade-up">
+            <div class="author__photo-wrap">
+                <img src="img/фото/irina-portrait.jpeg" alt="Ирина Алункачева, врач-остеопат" class="author__photo-img">
+            </div>
+            <div class="author__content">
+                <div class="tag">Об авторе</div>
+                <h2>Я покажу вам самый короткий путь</h2>
+                <p class="author__role">Врач-остеопат · Doctor of Osteopathy M.D., D.O.</p>
+                <p class="author__bio">Меня зовут Ирина Алункачева. Я не просто врач-остеопат и основатель клиники. Я — женщина, жена и мама, которая однажды выбрала другой путь.</p>
+                <p class="author__bio">Начав карьеру акушером-гинекологом, я видела сотни женщин и понимала: лечить симптомы — это тупик. Я искала систему, которая работает с первопричиной. Так я пришла в интегративную медицину, а затем — в остеопатию.</p>
+                <p class="author__bio">4 года в одной из лучших школ мира — Русской Высшей Школе Остеопатической Медицины, дипломная работа по детям с СДВГ, тысячи благодарных пациентов — всё это было дорогой к одной простой мысли: настоящая сила — в руках заботливой женщины.</p>
+                <p class="author__bio">На приёмах я видела, как загорались глаза у мам, когда я показывала им простые техники помощи. Так родился «ОстеоХелп» — квинтэссенция моих знаний, адаптированная для вас. Я убрала всё сложное и оставила только то, что безопасно, эффективно и работает сразу.</p>
+                <p class="author__bio">Моя миссия — вооружить каждую из вас знанием, которое превратит вашу тревогу в уверенность, а ваши руки — в инструмент исцеления.</p>
+
+                <div class="credentials">
+                    <div class="credential">
+                        <span class="credential__dot" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Doctor of Osteopathy M.D., D.O.</strong>
+                            <span>РВШОМ · более 3 500 часов обучения · 2021–2025</span>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <span class="credential__dot" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Стипендиат премии им. Э.Т. Стилла</strong>
+                            <span>За отличные результаты в обучении · 2024</span>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <span class="credential__dot" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Член МАПО и Российской Остеопатической Ассоциации</strong>
+                            <span>Официальный реестр врачей-остеопатов РФ</span>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <span class="credential__dot" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Специализация: детская остеопатия (0–3 лет)</strong>
+                            <span>Неврология · Работа с патологиями ЦНС</span>
+                        </div>
+                    </div>
+                    <div class="credential">
+                        <span class="credential__dot" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Базовое медицинское образование</strong>
+                            <span>Кубанский государственный медицинский университет · 2011</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certs">
+                    <p class="certs__label">Дипломы и сертификаты:</p>
+                    <div class="certs__grid">
+                        <div class="cert-thumb"><img src="сертификаты/1.JPG" alt="Диплом Doctor of Osteopathy" loading="lazy"></div>
+                        <div class="cert-thumb"><img src="сертификаты/2.JPG" alt="Диплом о профпереподготовке РВШОМ" loading="lazy"></div>
+                        <div class="cert-thumb"><img src="сертификаты/3.JPG" alt="Удостоверение МАПО" loading="lazy"></div>
+                        <div class="cert-thumb"><img src="сертификаты/4.JPG" alt="Диплом им. Стилла" loading="lazy"></div>
+                        <div class="cert-thumb"><img src="сертификаты/5.JPG" alt="Сертификат РОА" loading="lazy"></div>
+                        <div class="cert-thumb cert-thumb--more"><span>+9<br>ещё</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     5. ПРОГРАММА
+════════════════════════════════════════ -->
+<section class="section section--white" id="program">
+    <div class="container">
+        <div class="section__header fade-up">
+            <div class="tag">Содержание курса</div>
+            <h2>Ваша домашняя остео-аптечка: что внутри?</h2>
+            <p class="section__subtitle">Курс состоит из коротких понятных видеоуроков, сгруппированных по проблемам. Вы находите нужный урок за 1 минуту и сразу применяете.</p>
+        </div>
+        <div class="program-grid fade-up">
+            <div class="program-card">
+                <div class="program-card__num">1</div>
+                <div class="program-card__body">
+                    <h3>Фундамент здоровья: Дети 0–3 лет</h3>
+                    <ul class="program-card__list">
+                        <li>Колики и беспокойный живот: как помочь за 5 минут</li>
+                        <li>Крепкий сон: техники для лёгкого засыпания</li>
+                        <li>Профилактика дакриоцистита (проблемы с глазками)</li>
+                        <li>Идеальный старт для иммунитета</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card__num">2</div>
+                <div class="program-card__body">
+                    <h3>Ясная голова и лёгкие плечи</h3>
+                    <ul class="program-card__list">
+                        <li>Техники от головной боли для всей семьи</li>
+                        <li>Снимаем напряжение в шее и улучшаем кровообращение мозга</li>
+                        <li>Профилактика отитов и синуситов у детей</li>
+                        <li>Работа с глазным напряжением для улучшения зрения</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card__num">3</div>
+                <div class="program-card__body">
+                    <h3>Королевская осанка и свободное дыхание</h3>
+                    <ul class="program-card__list">
+                        <li>Снимаем боль в спине (поясница, между лопатками)</li>
+                        <li>Восстановление дыхания после пневмонии и COVID-19</li>
+                        <li>Работа с грудиной для снятия тревоги и стресса</li>
+                        <li>«Кнопка СТОП» — мгновенное снижение панической атаки</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card__num">4</div>
+                <div class="program-card__body">
+                    <h3>Крепкий иммунитет: горло, нос и уши</h3>
+                    <ul class="program-card__list">
+                        <li>Помощь при частых ангинах и аденоидитах</li>
+                        <li>Мягкая коррекция при ОРВИ</li>
+                        <li>Работа с гортанно-глоточным блоком (здоровье щитовидки)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card__num">5</div>
+                <div class="program-card__body">
+                    <h3>Женское и мужское здоровье</h3>
+                    <ul class="program-card__list">
+                        <li>Техника для смягчения послеродовой депрессии</li>
+                        <li>Убираем болезненные месячные и улучшаем кровоток</li>
+                        <li>Возвращаем либидо и чувственность</li>
+                        <li>Секретная техника для мужского здоровья</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card__num">6</div>
+                <div class="program-card__body">
+                    <h3>Красота и молодость. Эстетика руками</h3>
+                    <ul class="program-card__list">
+                        <li>Коррекция платизмы для чёткого овала лица</li>
+                        <li>Работа с рубцами и шрамами (в т.ч. после кесарева)</li>
+                        <li>Техники для улучшения оттока лимфы и снятия отёчности</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="program__note fade-up">Объясняю так, что поймёт любой — без медицинского образования</p>
+        <div class="fade-up" style="margin-top:var(--space-lg);text-align:center">
+            <a href="#price" class="btn btn--primary btn--lg">Выбрать свой тариф</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     6. ПРИНЦИПЫ РАБОТЫ
+════════════════════════════════════════ -->
+<section class="section" id="solution">
+    <div class="container">
+        <div class="section__header fade-up">
+            <div class="tag">Подход</div>
+            <h2>ОстеоХелп:<br><em>мягкие техники для здоровья семьи</em></h2>
+        </div>
+        <div class="utp-grid fade-up">
+            <div class="utp-card">
+                <div class="utp-card__num">01</div>
+                <h3>Простым языком</h3>
+                <p>Объясняю сложные вещи так, что поймёт любой человек без медицинского образования</p>
+            </div>
+            <div class="utp-card">
+                <div class="utp-card__num">02</div>
+                <h3>Причина, не симптом</h3>
+                <p>Нахожу первопричину проблемы и воздействую на неё — а не просто устраняю симптомы</p>
+            </div>
+            <div class="utp-card">
+                <div class="utp-card__num">03</div>
+                <h3>Системный подход</h3>
+                <p>Рассматриваю тело как единую взаимосвязанную систему — не лечу «спину отдельно»</p>
+            </div>
+            <div class="utp-card">
+                <div class="utp-card__num">04</div>
+                <h3>Честность</h3>
+                <p>Не обещаю чудес и не идеализирую. Отдаю вам ответственность за здоровье семьи</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     7. ОТЗЫВЫ
+════════════════════════════════════════ -->
+<section class="section" id="reviews">
+    <div class="container">
+        <div class="section__header fade-up">
+            <div class="tag">Отзывы</div>
+            <h2>Что говорят участницы курса</h2>
+        </div>
+        <div class="reviews-grid fade-up">
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">В первый раз он уснул прямо во время сеанса. Три сеанса — и говорит, что давно не испытывал такого расслабления и лёгкости в спине.</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">А</div>
+                        <span>Участница курса — о муже</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8842.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">Сразу после применения ваших техник моментально улучшается самочувствие — и уже не принимает лекарства.</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">Н</div>
+                        <span>Участница курса — о родном человеке</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8844.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">Все техники рабочие, с положительным откликом! Даже на очных обучениях так подробно не всегда объясняют. У вас дар преподавания!</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">Е</div>
+                        <span>Участница курса — применяет в работе</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8843.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">Я не пью таблетки против головной боли — методом тыка всегда пыталась устранить. А тут всё пошагово расписано, и очень нравится объяснение.</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">М</div>
+                        <span>Участница курса</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8841.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">На себе пробовала технику против головной боли — очень хорошо помогает. Огромное спасибо.</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">А</div>
+                        <span>Участница курса</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8840.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+            <div class="review-combo">
+                <div class="review-combo__quote">
+                    <span class="review-combo__mark">"</span>
+                    <p class="review-combo__text">Спасибо за такой прекрасный подарок себе и близким.</p>
+                    <div class="review-combo__author">
+                        <div class="review-avatar">З</div>
+                        <span>Участница курса</span>
+                    </div>
+                </div>
+                <div class="review-combo__proof">
+                    <img src="отзывы/IMG_8839.jpg" alt="Скрин отзыва из Telegram-чата">
+                    <span class="review-combo__proof-label">скрин из чата</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     8. ДЛЯ КОГО
+════════════════════════════════════════ -->
+<section class="section section--white" id="for-whom">
+    <div class="container">
+        <div class="section__header fade-up">
+            <div class="tag">Кому подходит</div>
+            <h2>Для кого этот курс</h2>
+        </div>
+        <div class="for-whom fade-up">
+            <div class="for-whom__col for-whom__col--yes">
+                <h3>Подойдёт вам, если</h3>
+                <ul>
+                    <li>Вы мама, жена или дочь, которая хочет помогать близким</li>
+                    <li>У вас нет медицинского образования — и это не проблема</li>
+                    <li>Вы хотите понимать своё тело и тело своих детей</li>
+                    <li>Вы устали от бесконечных визитов к врачам без результата</li>
+                </ul>
+            </div>
+            <div class="for-whom__col for-whom__col--no">
+                <h3>Не подойдёт, если</h3>
+                <ul>
+                    <li>Вы хотите стать профессиональным остеопатом и вести приём</li>
+                    <li>У близкого острая травма или состояние, требующее срочной медпомощи</li>
+                    <li>Вы ищете быстрое чудо без практики и усилий со своей стороны</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fade-up" style="margin-top:var(--space-lg);text-align:center">
+            <a href="#tariffs" class="btn btn--primary btn--lg">Да, это для меня — выбрать тариф</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     9. ЦЕНА
+════════════════════════════════════════ -->
+<section class="section section--sage" id="price">
+    <div class="container">
+        <div class="section__header section__header--light fade-up">
+            <div class="tag tag--light">Инвестиция в здоровье семьи</div>
+            <h2>Выберите свой уровень мастерства</h2>
+        </div>
+        <!-- ПРЕДПРОДАЖНЫЙ БАННЕР -->
+        <div class="fade-up" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:var(--r-md);padding:var(--space-sm) var(--space-md);text-align:center;margin-bottom:var(--space-md);">
+            <p style="color:var(--white);font-size:15px;font-weight:600;margin-bottom:4px;">🎁 Специальные предпродажные цены</p>
+            <p style="color:rgba(255,255,255,.75);font-size:13px;">Только для тех, кто оставил заявку заранее. Действует до [ДАТА].</p>
+        </div>
+        <div class="tariffs fade-up" id="tariffs">
+            <!-- Тариф 1 -->
+            <div class="tariff-card">
+                <p class="tariff-name">Заботливая мама</p>
+                <p class="tariff-desc">Идеальный старт, чтобы освоить базу и помогать семье в самых частых ситуациях.</p>
+                <div class="tariff-price">[ЦЕНА_1] <span>₽</span></div>
+                <ul class="tariff-includes">
+                    <li>Доступ ко всем модулям курса на 6 месяцев</li>
+                    <li>Самостоятельное изучение без чата поддержки</li>
+                </ul>
+                <a href="ВСТАВИТЬ_ССЫЛКУ_ПРЕДПРОДАЖА_1" class="btn btn--outline-light btn--lg" target="_blank" rel="noopener">Начать заботиться</a>
+            </div>
+            <!-- Тариф 2 — featured -->
+            <div class="tariff-card tariff-card--featured">
+                <div class="tariff-badge">Рекомендую</div>
+                <p class="tariff-name">Семейный целитель</p>
+                <p class="tariff-desc">Полное погружение. Вы не просто лечите — вы создаёте систему здоровья для всей семьи на годы вперёд.</p>
+                <div class="tariff-price">[ЦЕНА_2] <span>₽</span></div>
+                <ul class="tariff-includes">
+                    <li>Доступ ко всем модулям курса на 12 месяцев</li>
+                    <li>Закрытый чат с автором курса для ответов на вопросы</li>
+                    <li>Две онлайн-встречи с Ириной в формате «вопрос-ответ»</li>
+                </ul>
+                <a href="ВСТАВИТЬ_ССЫЛКУ_ПРЕДПРОДАЖА_2" class="btn btn--primary btn--xl" target="_blank" rel="noopener">Стать целителем семьи</a>
+            </div>
+            <!-- Тариф 3 -->
+            <div class="tariff-card">
+                <p class="tariff-name">Мастер практик</p>
+                <p class="tariff-desc">Для тех, кто хочет не просто научиться, а достичь совершенства.</p>
+                <div class="tariff-price">[ЦЕНА_3] <span>₽</span></div>
+                <ul class="tariff-includes">
+                    <li>Бессрочный доступ ко всем модулям и их обновлениям</li>
+                    <li>Все опции тарифа «Семейный целитель»</li>
+                    <li>Личная встреча-практикум с Ириной (очно в Махачкале или онлайн)</li>
+                    <li>Именной сертификат после успешной сдачи зачёта</li>
+                </ul>
+                <a href="ВСТАВИТЬ_ССЫЛКУ_ПРЕДПРОДАЖА_3" class="btn btn--outline-light btn--lg" target="_blank" rel="noopener">Достичь мастерства</a>
+            </div>
+        </div>
+        <div class="payment-icons fade-up" style="margin-top:var(--space-md)">
+            <span class="payment-icons__label" style="color:rgba(255,255,255,.7)">Принимаем к оплате:</span>
+            <div class="payment-icons__list">
+                <div class="payment-icon" aria-label="VISA">
+                    <svg width="54" height="34" viewBox="0 0 54 34" fill="none"><rect width="54" height="34" rx="5" fill="white" fill-opacity="0.15"/><text x="27" y="23" font-family="Arial,sans-serif" font-size="15" font-weight="800" font-style="italic" fill="white" text-anchor="middle" letter-spacing="1.5">VISA</text></svg>
+                </div>
+                <div class="payment-icon" aria-label="Mastercard">
+                    <svg width="54" height="34" viewBox="0 0 54 34" fill="none"><rect width="54" height="34" rx="5" fill="white" fill-opacity="0.15"/><circle cx="21" cy="17" r="9" fill="#EB001B" opacity="0.9"/><circle cx="33" cy="17" r="9" fill="#F79E1B" opacity="0.9"/><path d="M27 10a9 9 0 0 1 0 14 9 9 0 0 1 0-14z" fill="#FF5F00" opacity="0.9"/></svg>
+                </div>
+                <div class="payment-icon" aria-label="Мир">
+                    <svg width="54" height="34" viewBox="0 0 54 34" fill="none"><rect width="54" height="34" rx="5" fill="white" fill-opacity="0.15"/><text x="27" y="22" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">МИР</text></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     ВАЖНО ПОНИМАТЬ
+════════════════════════════════════════ -->
+<section class="section section--white" id="disclaimer">
+    <div class="container container--narrow">
+        <div class="disclaimer fade-up">
+            <div class="disclaimer__icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4L4 8v8c0 7.4 5.1 13.6 12 15 6.9-1.4 12-7.6 12-15V8L16 4z" stroke="#7D8F6A" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 14v4M16 22v.5" stroke="#7D8F6A" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+                <h2>Важно понимать</h2>
+                <p>Курс «ОстеоХелп» — это мощный образовательный инструмент для улучшения качества жизни и помощи близким в рамках бытовых ситуаций. Он не заменяет очный приём врача при острых состояниях или серьёзных заболеваниях. Все техники курса являются безопасными при соблюдении инструкций. Список противопоказаний подробно разбирается на первых уроках. Ваше здоровье и безопасность — мой главный приоритет.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     11. FAQ
+════════════════════════════════════════ -->
+<section class="section section--sand" id="faq">
+    <div class="container container--narrow">
+        <div class="section__header fade-up">
+            <div class="tag">Вопросы и ответы</div>
+            <h2>Часто спрашивают</h2>
+        </div>
+        <div class="accordion fade-up" id="accordion">
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Боюсь, что не смогу — это слишком сложно</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion__body" hidden>
+                    <p>Курс создан специально для людей без медицинского образования. Я объясняю каждую технику с нуля — так, чтобы с первого раза было понятно, что делать и зачем. Если вы можете смотреть видео и повторять движения руками, вы справитесь.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>А вдруг я наврежу близкому?</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion__body" hidden>
+                    <p>Мягкие остеопатические техники — это не мануальная терапия и не хиропрактика. Они безопасны при правильном применении. В курсе я отдельно разбираю противопоказания и чётко говорю, в каких ситуациях нужно идти к врачу, а не применять техники самостоятельно.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Нет времени проходить курс</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion__body" hidden>
+                    <p>Курс полностью асинхронный — смотрите когда удобно, в своём темпе. Можно смотреть в обед, в дороге или перед сном.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>У меня нет медицинского образования</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion__body" hidden>
+                    <p>Именно для вас этот курс и создан. Никаких медицинских терминов без объяснений, никаких предположений что вы что-то знаете заранее. Я начинаю с самого начала — так, как хотела бы объяснить своей маме.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     12. ФИНАЛЬНЫЙ CTA
+════════════════════════════════════════ -->
+<section class="section section--sand final-cta" id="final-cta">
+    <div class="botanical botanical--final" aria-hidden="true">
+        <svg width="90" height="160" viewBox="0 0 90 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45 155 C43 140 41 118 39 92 C37 66 38 38 45 8" stroke="#7D8F6A" stroke-width="1.3" stroke-linecap="round" opacity="0.4"/>
+            <path d="M41 38 C41 38 20 28 12 10 C26 20 39 32 39 32" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            <path d="M47 38 C47 38 66 28 74 10 C60 20 49 32 49 32" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            <path d="M40 68 C40 68 18 60 10 40 C26 52 38 62 38 62" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            <path d="M48 68 C48 68 68 60 76 40 C60 52 50 62 50 62" stroke="#7D8F6A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+    </div>
+    <div class="container container--narrow">
+        <div class="final-cta__inner fade-up">
+            <div class="tag">Начните сегодня</div>
+            <h2>Здоровье семьи — в ваших руках. Буквально.</h2>
+            <p class="section__subtitle">Сотни участниц уже снимают головную боль без таблеток, укладывают детей без слёз и видят благодарность в глазах близких. Теперь ваша очередь.</p>
+            <div class="final-cta__btns">
+                <a href="#tariffs" class="btn btn--primary btn--xl">Купить курс</a>
+                <a href="https://t.me/irina_Alunkacheva" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">Задать вопрос</a>
+            </div>
+            <p class="final-cta__tg">
+                Остались вопросы? <a href="https://t.me/irina_Alunkacheva" target="_blank" rel="noopener noreferrer">Напишите в Telegram</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <span class="footer__logo">ОстеоХелп</span>
+                <p>Мягкие техники для здоровья семьи</p>
+            </div>
+            <nav class="footer__nav" aria-label="Навигация в подвале">
+                <a href="#program">Программа</a>
+                <a href="#author">Об авторе</a>
+                <a href="#price">Цена</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="footer__contacts">
+                <a href="https://t.me/irina_Alunkacheva" target="_blank" rel="noopener">Telegram</a>
+                <!-- Добавить другие соцсети когда получим от Ирины -->
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 С/з Алункачева Ирина Алилгаджиевна · ИНН 262516297433 · <a href="mailto:irin1707@yandex.ru">irin1707@yandex.ru</a> · <a href="docs/privacy.pdf" target="_blank" rel="noopener">Политика конфиденциальности</a> · <a href="docs/offer.pdf" target="_blank" rel="noopener">Публичная оферта</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ════════════════════════════════════════
+     ГАЛЕРЕЯ СЕРТИФИКАТОВ
+════════════════════════════════════════ -->
+<div class="cert-gallery" id="certGallery" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Все сертификаты">
+    <div class="cert-gallery__overlay" id="galleryOverlay"></div>
+    <div class="cert-gallery__box">
+        <div class="cert-gallery__head">
+            <div>
+                <p class="cert-gallery__title">Дипломы и сертификаты</p>
+                <p class="cert-gallery__sub">14 документов</p>
+            </div>
+            <button class="cert-gallery__close" id="galleryClose" aria-label="Закрыть">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M14 4L4 14M4 4l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="cert-gallery__grid" id="galleryGrid">
+            <!-- Заполняется из JS -->
+        </div>
+    </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ЛАЙТБОКС СЕРТИФИКАТОВ
+════════════════════════════════════════ -->
+<div class="lightbox" id="certLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр сертификата">
+    <div class="lightbox__overlay" id="lightboxOverlay"></div>
+    <div class="lightbox__container">
+        <div class="lightbox__bar">
+            <span class="lightbox__counter" id="lightboxCounter">1 / 14</span>
+            <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M14 4L4 14M4 4l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="lightbox__stage">
+            <button class="lightbox__nav-btn" id="lightboxPrev" aria-label="Предыдущий сертификат">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="lightbox__frame">
+                <span class="lightbox__corner lightbox__corner--tl" aria-hidden="true">✦</span>
+                <span class="lightbox__corner lightbox__corner--tr" aria-hidden="true">✦</span>
+                <span class="lightbox__corner lightbox__corner--bl" aria-hidden="true">✦</span>
+                <span class="lightbox__corner lightbox__corner--br" aria-hidden="true">✦</span>
+                <div class="lightbox__frame-inner">
+                    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+                </div>
+            </div>
+            <button class="lightbox__nav-btn" id="lightboxNext" aria-label="Следующий сертификат">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ЛАЙТБОКС ОТЗЫВОВ
+════════════════════════════════════════ -->
+<div class="review-lightbox" id="reviewImgLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Скрин отзыва">
+    <div class="review-lightbox__overlay" id="reviewLbOverlay"></div>
+    <div class="review-lightbox__content">
+        <button class="review-lightbox__close" id="reviewLbClose" aria-label="Закрыть">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M14 4L4 14M4 4l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <img class="review-lightbox__img" id="reviewLbImg" src="" alt="">
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
