@@ -563,7 +563,28 @@
         <!-- ПРЕДПРОДАЖНЫЙ БАННЕР -->
         <div class="fade-up" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:var(--r-md);padding:var(--space-sm) var(--space-md);text-align:center;margin-bottom:var(--space-md);">
             <p style="color:var(--white);font-size:15px;font-weight:600;margin-bottom:4px;">Эта цена — награда за то, что поверили раньше всех.</p>
-            <p style="color:rgba(255,255,255,.75);font-size:13px;">Доступна только вам и только до 7 июня в 22:00.</p>
+            <p style="color:rgba(255,255,255,.75);font-size:13px;margin-bottom:14px;">Доступна только вам и только до 7 июня в 22:00.</p>
+            <div id="presale-countdown" style="display:flex;justify-content:center;align-items:flex-start;gap:8px;">
+                <div style="text-align:center;min-width:44px;">
+                    <div id="cd-days" style="font-size:28px;font-weight:700;color:var(--white);line-height:1;">00</div>
+                    <div style="font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;">дней</div>
+                </div>
+                <div style="color:rgba(255,255,255,.35);font-size:22px;font-weight:300;line-height:1;padding-top:2px;">:</div>
+                <div style="text-align:center;min-width:44px;">
+                    <div id="cd-hours" style="font-size:28px;font-weight:700;color:var(--white);line-height:1;">00</div>
+                    <div style="font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;">часов</div>
+                </div>
+                <div style="color:rgba(255,255,255,.35);font-size:22px;font-weight:300;line-height:1;padding-top:2px;">:</div>
+                <div style="text-align:center;min-width:44px;">
+                    <div id="cd-mins" style="font-size:28px;font-weight:700;color:var(--white);line-height:1;">00</div>
+                    <div style="font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;">минут</div>
+                </div>
+                <div style="color:rgba(255,255,255,.35);font-size:22px;font-weight:300;line-height:1;padding-top:2px;">:</div>
+                <div style="text-align:center;min-width:44px;">
+                    <div id="cd-secs" style="font-size:28px;font-weight:700;color:var(--white);line-height:1;">00</div>
+                    <div style="font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;">секунд</div>
+                </div>
+            </div>
         </div>
         <div class="tariffs fade-up" id="tariffs">
             <!-- Тариф 1 -->
@@ -831,5 +852,29 @@
 </div>
 
 <script src="js/main.js"></script>
+<script>
+(function () {
+    var deadline = new Date('2026-06-07T22:00:00+03:00');
+    var dEl = document.getElementById('cd-days');
+    var hEl = document.getElementById('cd-hours');
+    var mEl = document.getElementById('cd-mins');
+    var sEl = document.getElementById('cd-secs');
+    if (!dEl) return;
+    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+    function tick() {
+        var diff = deadline - Date.now();
+        if (diff <= 0) {
+            document.getElementById('presale-countdown').innerHTML = '<p style="color:rgba(255,255,255,.75);font-size:13px;margin:0;">Предпродажа завершена</p>';
+            return;
+        }
+        dEl.textContent = pad(Math.floor(diff / 86400000));
+        hEl.textContent = pad(Math.floor(diff % 86400000 / 3600000));
+        mEl.textContent = pad(Math.floor(diff % 3600000 / 60000));
+        sEl.textContent = pad(Math.floor(diff % 60000 / 1000));
+        setTimeout(tick, 1000);
+    }
+    tick();
+}());
+</script>
 </body>
 </html>
